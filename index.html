@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>BUILDUP FRANCHISE - Business & Churros Consulting</title>
     <!-- Tailwind CSS for Fast & Clean Mobile Layout -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,247 +15,302 @@
             background-size: cover;
             background-position: center;
         }
+        /* Prevents ugly word breaks in small mobile views */
+        .keep-words { word-break: keep-all; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 antialiased selection:bg-blue-500 selection:text-white">
+<body class="bg-gray-50 text-gray-900 antialiased selection:bg-blue-500 selection:text-white keep-words">
 
     <!-- NAVIGATION BAR -->
     <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
         <div class="max-w-md mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center space-x-2">
-                <img src="bu logo.png" alt="BUILDUP Logo" class="w-9 h-9 object-contain">
-                <span class="font-extrabold text-lg tracking-tight text-[#0A2240]">BUILDUP</span>
+                <img src="bu logo.png" alt="BUILDUP Logo" class="w-8 h-8 object-contain">
+                <span class="font-extrabold text-base tracking-tight text-[#0A2240]">BUILDUP</span>
             </div>
-            <a href="tel:09667706000" class="bg-[#1E40AF] text-white text-xs font-bold px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition">Call Us</a>
+            <a href="tel:09667706000" class="bg-[#1E40AF] text-white text-[11px] font-bold px-3.5 py-1.5 rounded-full shadow-md hover:bg-blue-700 transition">Call Us</a>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="bg-builduphero text-white py-16 px-5 text-center flex flex-col items-center justify-center min-h-[70vh]">
+    <section class="bg-builduphero text-white py-14 px-5 text-center flex flex-col items-center justify-center min-h-[60vh]">
         <div class="max-w-md mx-auto">
-            <span class="bg-blue-500/30 text-blue-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Trusted Franchise Partner</span>
-            <h1 class="text-3xl font-extrabold mt-3 leading-tight tracking-tight">
+            <span class="bg-emerald-500/30 text-emerald-300 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Social Enterprise Project</span>
+            <h1 class="text-2xl font-extrabold mt-3 leading-tight tracking-tight">
                 Don't Just Sell Street Food.<br><span class="text-blue-400">Build a Real Business!</span>
             </h1>
-            <p class="text-gray-300 text-sm mt-3 font-normal max-w-xs mx-auto">
-                "Building Local Stores. Growing Your Future." Start a premium Korean dessert business backed by a proven consulting system.
+            <p class="text-gray-300 text-xs mt-3 font-normal max-w-[280px] mx-auto leading-relaxed">
+                "Building Local Stores. Growing Your Future." Empowering local families through sustainable livelihood programs.
             </p>
-            <div class="mt-8 flex flex-col space-y-3 w-full px-4">
-                <a href="#franchise" class="bg-[#1E40AF] text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-blue-900/40 text-sm tracking-wide active:scale-95 transition w-full">View Franchise Packages</a>
-                <a href="#contact" class="bg-white/10 text-white font-semibold py-3 px-6 rounded-xl border border-white/20 text-sm active:scale-95 transition w-full backdrop-blur-sm">Get Free Consultation</a>
+            <div class="mt-6 flex flex-col space-y-3 w-full px-4">
+                <a href="#franchise" class="bg-[#1E40AF] text-white font-bold py-3 px-5 rounded-xl shadow-lg shadow-blue-900/40 text-xs tracking-wide active:scale-95 transition w-full">View Livelihood Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4-KEYWORD CORE CARDS SECTION -->
+    <section class="py-6 px-4 max-w-md mx-auto">
+        <div class="grid grid-cols-2 gap-3">
+            <!-- Card 1: Profit -->
+            <div class="bg-gradient-to-br from-emerald-50 to-emerald-100/50 p-3.5 rounded-xl border border-emerald-100 flex flex-col justify-between shadow-sm min-h-[85px]">
+                <span class="text-lg">₱</span>
+                <div>
+                    <h4 class="font-bold text-[11px] text-emerald-900 leading-tight">High Profit</h4>
+                    <p class="text-[10px] text-emerald-700 font-medium mt-0.5 whitespace-nowrap">₱30K–₱50K+ Monthly</p>
+                </div>
+            </div>
+            <!-- Card 2: Setup -->
+            <div class="bg-white p-3.5 rounded-xl border border-gray-100 flex flex-col justify-between shadow-sm min-h-[85px]">
+                <span class="text-lg">👥</span>
+                <div>
+                    <h4 class="font-bold text-[11px] text-gray-900 leading-tight">Easy Setup</h4>
+                    <p class="text-[10px] text-gray-500 mt-0.5 whitespace-nowrap">1–2 Crews Operation</p>
+                </div>
+            </div>
+            <!-- Card 3: Storage -->
+            <div class="bg-white p-3.5 rounded-xl border border-gray-100 flex flex-col justify-between shadow-sm min-h-[85px]">
+                <span class="text-lg">📦</span>
+                <div>
+                    <h4 class="font-bold text-[11px] text-gray-900 leading-tight">Easy Inventory</h4>
+                    <p class="text-[10px] text-gray-500 mt-0.5 whitespace-nowrap">No Chillers Required</p>
+                </div>
+            </div>
+            <!-- Card 4: System -->
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100/50 p-3.5 rounded-xl border border-blue-100 flex flex-col justify-between shadow-sm min-h-[85px]">
+                <span class="text-lg">🤝</span>
+                <div>
+                    <h4 class="font-bold text-[11px] text-blue-900 leading-tight">Partner Support</h4>
+                    <p class="text-[10px] text-blue-700 mt-0.5 whitespace-nowrap">Special Livelihood Discount</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- WHY CHURROSTOP & BUILDUP SYSTEM -->
-    <section class="py-12 px-4 max-w-md mx-auto">
-        <div class="text-center mb-8">
-            <h2 class="text-2xl font-bold text-[#0A2240]">Why Churrostop?</h2>
-            <p class="text-xs text-gray-500 mt-1">A high-profit opportunity designed for your local success.</p>
+    <section class="py-10 px-4 max-w-md mx-auto border-t border-gray-100">
+        <div class="text-center mb-6">
+            <h2 class="text-xl font-bold text-[#0A2240]">Why Choose Buildup?</h2>
+            <p class="text-xs text-gray-400 mt-1">We are not just a supplier, we are your lifelong partner.</p>
         </div>
-        <div class="space-y-4">
-            <!-- Profit Potential -->
-            <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100 flex items-start space-x-4">
-                <div class="flex-shrink-0 bg-emerald-600 text-white font-bold text-xs w-7 h-7 rounded-full flex items-center justify-center mt-0.5">₱</div>
+        <div class="space-y-3">
+            <!-- Advantage 1 -->
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex items-start space-x-3.5">
+                <div class="flex-shrink-0 bg-blue-600 text-white font-bold text-[10px] w-6 h-6 rounded-full flex items-center justify-center mt-0.5">1</div>
                 <div>
-                    <h3 class="font-bold text-sm text-emerald-900">High Profit Potential</h3>
-                    <p class="text-xs text-emerald-700 mt-1 font-semibold">Earn ₱30,000 – ₱50,000+ Monthly Profit</p>
-                    <p class="text-[11px] text-emerald-600/80 mt-0.5">High gross margin with premium Korean dessert quality.</p>
+                    <h3 class="font-bold text-xs text-gray-900">Premium Location Scouting</h3>
+                    <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">We find high-traffic spots near schools and local markets to secure your daily sales.</p>
                 </div>
             </div>
-            <!-- Easy Operations -->
-            <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex items-start space-x-4">
-                <div class="flex-shrink-0 bg-blue-600 text-white font-bold text-xs w-7 h-7 rounded-full flex items-center justify-center mt-0.5">1</div>
+            <!-- Advantage 2 -->
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex items-start space-x-3.5">
+                <div class="flex-shrink-0 bg-blue-600 text-white font-bold text-[10px] w-6 h-6 rounded-full flex items-center justify-center mt-0.5">2</div>
                 <div>
-                    <h3 class="font-bold text-sm text-gray-900">Super Easy Operations</h3>
-                    <p class="text-xs text-gray-500 mt-1">Easy training, easy storage & inventory management. No refrigeration required! Perfect for a 1–2 person operation in a small space.</p>
+                    <h3 class="font-bold text-xs text-gray-900">Hands-On Crew Training</h3>
+                    <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Full operational and cooking standard manuals so anyone can run the store smoothly.</p>
                 </div>
             </div>
-            <!-- Complete Support -->
-            <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex items-start space-x-4">
-                <div class="flex-shrink-0 bg-blue-600 text-white font-bold text-xs w-7 h-7 rounded-full flex items-center justify-center mt-0.5">2</div>
+            <!-- Advantage 3 -->
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex items-start space-x-3.5">
+                <div class="flex-shrink-0 bg-blue-600 text-white font-bold text-[10px] w-6 h-6 rounded-full flex items-center justify-center mt-0.5">3</div>
                 <div>
-                    <h3 class="font-bold text-sm text-gray-900">Proven Business System</h3>
-                    <p class="text-xs text-gray-500 mt-1">From professional location assessment, store design, to marketing support, we provide a structured fast setup.</p>
-                </div>
-            </div>
-            <!-- Supply Chain -->
-            <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex items-start space-x-4">
-                <div class="flex-shrink-0 bg-blue-600 text-white font-bold text-xs w-7 h-7 rounded-full flex items-center justify-center mt-0.5">3</div>
-                <div>
-                    <h3 class="font-bold text-sm text-gray-900">Continuous Supply & Support</h3>
-                    <p class="text-xs text-gray-500 mt-1">Guaranteed continuous raw material supply (Churros mix, dipping sauces, toppings) with lifetime after-sales consultation.</p>
+                    <h3 class="font-bold text-xs text-gray-900">Stable Raw Supply Line</h3>
+                    <p class="text-[11px] text-gray-500 mt-1 leading-relaxed">Get guaranteed, low-cost premium ingredients straight from our system to maximize your profit.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ALL-IN PACKAGE DETAILS WITH TOGGLE SYSTEM -->
-    <section id="franchise" class="py-12 bg-white px-4">
+    <!-- ALL-IN PACKAGE DETAILS WITH 3-WAY TOGGLE SYSTEM -->
+    <section id="franchise" class="py-10 bg-white px-4 border-t border-gray-100">
         <div class="max-w-md mx-auto">
-            <div class="text-center mb-6">
-                <span class="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-2.5 py-1 rounded-md">Honest & Transparent Pricing</span>
-                <h2 class="text-2xl font-bold text-[#0A2240] mt-2">Franchise Packages</h2>
-                <p class="text-xs text-gray-500 mt-1">Select a package that fits your investment plan.</p>
+            <div class="text-center mb-5">
+                <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider bg-emerald-50 px-2.5 py-1 rounded-md">Livelihood Discount Applied</span>
+                <h2 class="text-xl font-bold text-[#0A2240] mt-2">Franchise Packages</h2>
+                <p class="text-xs text-gray-400 mt-1">Select an all-in community package that fits your goal.</p>
             </div>
 
-            <!-- Package Select Toggle Buttons -->
-            <div class="flex bg-gray-100 p-1.5 rounded-xl mb-6">
-                <button onclick="switchPackage('pkg150')" id="btn150" class="flex-1 text-center py-2.5 text-xs font-bold rounded-lg transition duration-200 bg-blue-600 text-white shadow-sm">
-                    ₱150,000 Basic
+            <!-- 3-Way Package Select Toggle Buttons -->
+            <div class="flex bg-gray-100 p-1 rounded-xl mb-5 text-[10px] font-bold">
+                <button onclick="switchPackage('pkg150')" id="btn150" class="flex-1 text-center py-2 rounded-lg transition duration-200 bg-blue-600 text-white shadow-sm">
+                    150K Basic
                 </button>
-                <button onclick="switchPackage('pkg250')" id="btn250" class="flex-1 text-center py-2.5 text-xs font-bold rounded-lg transition duration-200 text-gray-600 hover:text-gray-900">
-                    ₱250,000 + Ice Cream
+                <button onclick="switchPackage('pkg200')" id="btn200" class="flex-1 text-center py-2 rounded-lg transition duration-200 text-gray-600 hover:text-gray-900">
+                    200K +Ice Cream
+                </button>
+                <button onclick="switchPackage('pkg250')" id="btn250" class="flex-1 text-center py-2 rounded-lg transition duration-200 text-gray-600 hover:text-gray-900">
+                    250K +Coffee Combo
                 </button>
             </div>
 
             <!-- PACKAGE 1: ₱150,000 CARD -->
-            <div id="package150" class="bg-white rounded-2xl border-2 border-blue-600 p-6 shadow-md relative overflow-hidden transition-all duration-300">
-                <div class="absolute top-0 right-0 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">No Hidden Fees</div>
-                <h3 class="font-bold text-lg text-gray-900">Churros Basic Package</h3>
+            <div id="package150" class="bg-white rounded-2xl border-2 border-blue-600 p-5 shadow-md relative overflow-hidden transition-all duration-300">
+                <div class="absolute top-0 right-0 bg-emerald-600 text-white text-[8px] font-bold px-2 py-0.5 rounded-bl-lg uppercase">₱20,000 Support Discounted</div>
+                <h3 class="font-bold text-sm text-gray-900">Churros Basic Package</h3>
+                <p class="text-[10px] text-gray-400">Essential Setup for Local Livelihood</p>
                 <div class="mt-2 flex items-baseline">
-                    <span class="text-3xl font-black text-blue-600">₱150,000</span>
-                    <span class="text-xs text-gray-400 ml-1">/ Total Capital</span>
+                    <span class="text-2xl font-black text-blue-600">₱150,000</span>
+                    <span class="text-xs text-gray-400 line-through ml-2">₱170,000</span>
                 </div>
 
-                <div class="mt-6 space-y-4 border-t border-gray-100 pt-4 text-xs">
+                <div class="mt-4 space-y-3.5 border-t border-gray-100 pt-3.5 text-[11px]">
                     <div>
-                        <h4 class="font-bold text-blue-800 uppercase tracking-wider mb-2">1. Business Support Included</h4>
-                        <ul class="space-y-1.5 text-gray-600 pl-2 border-l border-blue-200">
-                            <li>• Location Assessment & Consultation</li>
-                            <li>• Store Layout, Design & Interior Guide</li>
-                            <li>• Complete Staff Training & Standard Manual</li>
-                            <li>• Grand Opening & Ongoing Marketing Support</li>
-                            <li>• Quality Control System & Lifetime Support</li>
+                        <h4 class="font-bold text-blue-800 uppercase text-[10px] mb-1">1. Equipment Included</h4>
+                        <ul class="space-y-1 text-gray-600 pl-2 border-l border-blue-200 leading-relaxed">
+                            <li>• Professional Heavy Duty Churros Extruder</li>
+                            <li>• High-Efficiency Commercial Deep Fryer</li>
+                            <li>• Heavy Duty Dough Mixer & Premium Display Rack</li>
+                            <li>• Complete Utensils, Smallwares & Kiosk Signages</li>
                         </ul>
                     </div>
-
                     <div>
-                        <h4 class="font-bold text-blue-800 uppercase tracking-wider mb-2">2. Equipment & Signage Included</h4>
-                        <ul class="space-y-1.5 text-gray-600 pl-2 border-l border-blue-200">
-                            <li>• Professional Churros Machine & Deep Fryer</li>
-                            <li>• Heavy Duty Dough Mixer & Display Rack</li>
-                            <li>• Complete Utensils, Smallwares & Signages</li>
-                            <li>• Premium Light Box Sign & Menu/Price Board</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 class="font-bold text-blue-800 uppercase tracking-wider mb-2">3. Marketing & Continuous Supply</h4>
-                        <ul class="space-y-1.5 text-gray-600 pl-2 border-l border-blue-200">
-                            <li>• Promotional Posters, Banners & Window Stickers</li>
-                            <li>• Social Media Templates & Branding Graphics</li>
-                            <li>• Initial Supplies (Churros Mix, Dipping Sauces, Toppings)</li>
-                            <li>• Packaging Starter Kit & Uniform Designs</li>
+                        <h4 class="font-bold text-blue-800 uppercase text-[10px] mb-1">2. Business Support</h4>
+                        <ul class="space-y-1 text-gray-600 pl-2 border-l border-blue-200 leading-relaxed">
+                            <li>• Location Assessment & Layout Design</li>
+                            <li>• Complete Crew Operational Training & Recipes</li>
+                            <li>• Lifetime After-Sales Support & Marketing Materials</li>
+                            <li>• Continuous Raw Materials Supply Line</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- PACKAGE 2: ₱250,000 CARD -->
-            <div id="package250" class="hidden bg-white rounded-2xl border-2 border-indigo-600 p-6 shadow-md relative overflow-hidden transition-all duration-300">
-                <div class="absolute top-0 right-0 bg-indigo-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">Premium Combo</div>
-                <h3 class="font-bold text-lg text-gray-900">Churros & Ice Cream Package</h3>
+            <!-- PACKAGE 2: ₱200,000 CARD -->
+            <div id="package200" class="hidden bg-white rounded-2xl border-2 border-purple-600 p-5 shadow-md relative overflow-hidden transition-all duration-300">
+                <div class="absolute top-0 right-0 bg-emerald-600 text-white text-[8px] font-bold px-2 py-0.5 rounded-bl-lg uppercase">₱30,000 Support Discounted</div>
+                <h3 class="font-bold text-sm text-gray-900">Churros & Ice Cream Package</h3>
+                <p class="text-[10px] text-gray-400">High Demand Sweet Dual-Concept</p>
                 <div class="mt-2 flex items-baseline">
-                    <span class="text-3xl font-black text-indigo-600">₱250,000</span>
-                    <span class="text-xs text-gray-400 ml-1">/ Total Capital</span>
+                    <span class="text-2xl font-black text-purple-600">₱200,000</span>
+                    <span class="text-xs text-gray-400 line-through ml-2">₱230,000</span>
                 </div>
 
-                <div class="mt-6 space-y-4 border-t border-gray-100 pt-4 text-xs">
+                <div class="mt-4 space-y-3.5 border-t border-gray-100 pt-3.5 text-[11px]">
                     <div>
-                        <h4 class="font-bold text-indigo-800 uppercase tracking-wider mb-2">1. Premium Equipment Added</h4>
-                        <ul class="space-y-1.5 text-gray-600 pl-2 border-l border-indigo-200 font-semibold text-gray-800">
-                            <li>🌟 Commercial Soft-Serve Ice Cream Machine Included</li>
-                            <li>• Professional Churros Machine & Deep Fryer</li>
-                            <li>• Heavy Duty Dough Mixer & Premium Display Rack</li>
-                            <li>• Complete Utensils, Smallwares & Expanded Signages</li>
+                        <h4 class="font-bold text-purple-800 uppercase text-[10px] mb-1">1. Ice Cream System Added</h4>
+                        <ul class="space-y-1 text-gray-800 font-semibold pl-2 border-l border-purple-200 leading-relaxed">
+                            <li>🌟 Commercial Soft-Serve Ice Cream Machine</li>
+                            <li>🌟 Initial Premium Ice Cream Mix & Cone Supplies</li>
                         </ul>
                     </div>
-
                     <div>
-                        <h4 class="font-bold text-indigo-800 uppercase tracking-wider mb-2">2. Continuous Supply Chain</h4>
-                        <ul class="space-y-1.5 text-gray-600 pl-2 border-l border-indigo-200">
-                            <li>🌟 Premium Ice Cream Mix & Cone Supplies</li>
-                            <li>• Traditional Churros Mix & Signature Dipping Sauces</li>
-                            <li>• Full Toppings & Premium Packaging Starter Kit</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 class="font-bold text-indigo-800 uppercase tracking-wider mb-2">3. Extended Business Support</h4>
-                        <ul class="space-y-1.5 text-gray-600 pl-2 border-l border-indigo-200">
-                            <li>• Dual-Item Recipe & Operation Menu Setup</li>
-                            <li>• Location Assessment, Layout Planning & Interior Guide</li>
-                            <li>• Full Staff Training & Expanded Marketing Support</li>
-                            <li>• Lifetime After-Sales Support & Quality Control System</li>
+                        <h4 class="font-bold text-purple-800 uppercase text-[10px] mb-1">2. Complete Core Set</h4>
+                        <ul class="space-y-1 text-gray-600 pl-2 border-l border-purple-200 leading-relaxed">
+                            <li>• Professional Churros Machine & Fryer Setup</li>
+                            <li>• All Utensils, Dual Signages & Menu Boards</li>
+                            <li>• Extended Staff Training for Dual-Concept Operations</li>
+                            <li>• Continuous Supply Line & Marketing Support</li>
                         </ul>
                     </div>
                 </div>
+            </div>
+
+            <!-- PACKAGE 3: ₱250,000 CARD -->
+            <div id="package250" class="hidden bg-white rounded-2xl border-2 border-indigo-600 p-5 shadow-md relative overflow-hidden transition-all duration-300">
+                <div class="absolute top-0 right-0 bg-emerald-600 text-white text-[8px] font-bold px-2 py-0.5 rounded-bl-lg uppercase">₱40,000 Support Discounted</div>
+                <h3 class="font-bold text-sm text-gray-900">Premium Full Combo Package</h3>
+                <p class="text-[10px] text-gray-400">Churros + Ice Cream + Espresso System</p>
+                <div class="mt-2 flex items-baseline">
+                    <span class="text-2xl font-black text-indigo-600">₱250,000</span>
+                    <span class="text-xs text-gray-400 line-through ml-2">₱290,000</span>
+                </div>
+
+                <div class="mt-4 space-y-3.5 border-t border-gray-100 pt-3.5 text-[11px]">
+                    <div>
+                        <h4 class="font-bold text-indigo-800 uppercase text-[10px] mb-1">1. Premium Full Cafe Additions</h4>
+                        <ul class="space-y-1 text-gray-800 font-semibold pl-2 border-l border-indigo-200 leading-relaxed">
+                            <li>🌟 Commercial Espresso Coffee Machine & Grinder</li>
+                            <li>🌟 Commercial Soft-Serve Ice Cream Machine</li>
+                            <li>🌟 Starter Supply Kits for Beans, Mixes & Cups</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-indigo-800 uppercase text-[10px] mb-1">2. Maximum Business Support</h4>
+                        <ul class="space-y-1 text-gray-600 pl-2 border-l border-indigo-200 leading-relaxed">
+                            <li>• Premium Expanded Kiosk Signage & Light Boxes</li>
+                            <li>• 3-in-1 Complete Menu & Operations Manual</li>
+                            <li>• Advanced Crew Training & Store Launch Support</li>
+                            <li>• Full Lifetime Consultations & QC Systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DYNAMIC COMMUNITY LAUNCH PROJECT -->
+            <div class="mt-5 bg-gradient-to-r from-blue-900 to-[#0A2240] text-white p-4 rounded-xl shadow-md border border-blue-800">
+                <div class="flex items-center space-x-2">
+                    <span class="text-sm">💝</span>
+                    <h3 class="font-bold text-xs uppercase tracking-wide text-blue-400">Grand Opening Support</h3>
+                </div>
+                <h4 class="font-extrabold text-sm mt-1.5 leading-snug">Free Community Donation Event Sponsored by BUILDUP</h4>
+                <p id="dynamicLaunchText" class="text-[11px] text-gray-300 mt-1.5 leading-relaxed">
+                    To build local trust from day one, BUILDUP officially sponsors <span class="text-emerald-400 font-bold">3 Free Boxes of Premium Churros Powder (Worth ₱78,000+ Retail Value)</span> for your Grand Opening. This allows you to serve up to 2,025 pieces of free churros to your neighborhood, launching a powerful community sharing event together!
+                </p>
             </div>
 
         </div>
     </section>
 
     <!-- CONTACT INQUIRY FORM -->
-    <section id="contact" class="py-12 bg-gray-900 text-white px-4">
+    <section id="contact" class="py-10 bg-gray-900 text-white px-4">
         <div class="max-w-md mx-auto">
-            <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold">Start Your Journey Today</h2>
-                <p class="text-xs text-gray-400 mt-1">Have questions? Fill out the form or call us directly at <a href="tel:09667706000" class="text-blue-400 font-bold underline">0966-770-6000</a></p>
+            <div class="text-center mb-6">
+                <h2 class="text-xl font-bold">Start Your Journey Today</h2>
+                <p class="text-xs text-gray-400 mt-1">Have questions? Fill out the form or call us directly at <a href="tel:09667706000" class="text-blue-400 font-bold underline whitespace-nowrap">0966-770-6000</a></p>
             </div>
 
             <!-- AJAX Form Setup linked to xjgqygbb -->
-            <form id="franchiseForm" class="space-y-4 text-gray-900">
+            <form id="franchiseForm" class="space-y-3.5 text-gray-900">
                 <div>
-                    <label class="block text-xs font-semibold text-gray-300 mb-1">Full Name</label>
-                    <input type="text" name="name" required placeholder="Enter your full name" class="w-full bg-white border border-gray-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <label class="block text-[11px] font-semibold text-gray-300 mb-1">Full Name</label>
+                    <input type="text" name="name" required placeholder="Enter your full name" class="w-full bg-white border border-gray-700 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-gray-300 mb-1">Mobile Number</label>
-                    <input type="tel" name="phone" required placeholder="e.g. 09171234567" class="w-full bg-white border border-gray-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <label class="block text-[11px] font-semibold text-gray-300 mb-1">Mobile Number</label>
+                    <input type="tel" name="phone" required placeholder="e.g. 09171234567" class="w-full bg-white border border-gray-700 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-gray-300 mb-1">Target Location for Business</label>
-                    <input type="text" name="location" required placeholder="City or Province (e.g. Cavite, Manila)" class="w-full bg-white border border-gray-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <label class="block text-[11px] font-semibold text-gray-300 mb-1">Target Location for Business</label>
+                    <input type="text" name="location" required placeholder="City or Province (e.g. Cavite, Manila)" class="w-full bg-white border border-gray-700 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-gray-300 mb-1">Interested Package</label>
-                    <select name="budget" class="w-full bg-white border border-gray-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <label class="block text-[11px] font-semibold text-gray-300 mb-1">Interested Package</label>
+                    <select name="package" class="w-full bg-white border border-gray-700 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <option>₱150,000 Basic Package</option>
-                        <option>₱250,000 + Ice Cream Combo Package</option>
+                        <option>₱200,000 + Ice Cream Package</option>
+                        <option>₱250,000 Premium Full Combo Package</option>
                     </select>
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-gray-300 mb-1">Message / Questions</label>
-                    <textarea name="message" rows="3" placeholder="Tell us about your business plans..." class="w-full bg-white border border-gray-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    <label class="block text-[11px] font-semibold text-gray-300 mb-1">Message / Questions</label>
+                    <textarea name="message" rows="3" placeholder="Tell us about your business plans..." class="w-full bg-white border border-gray-700 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                 </div>
                 
-                <button type="submit" id="submitBtn" class="w-full bg-[#1E40AF] text-white font-bold py-3.5 rounded-xl shadow-lg text-sm mt-2 active:scale-95 transition flex items-center justify-center">
+                <button type="submit" id="submitBtn" class="w-full bg-[#1E40AF] text-white font-bold py-3 rounded-xl shadow-lg text-sm mt-2 active:scale-95 transition flex items-center justify-center tracking-wide">
                     Submit Franchise Request 🚀
                 </button>
             </form>
 
             <!-- Custom Success Message Panel -->
-            <div id="successMessage" class="hidden mt-4 p-4 bg-emerald-600 text-white text-center text-sm font-bold rounded-xl shadow-md border border-emerald-500">
+            <div id="successMessage" class="hidden mt-4 p-4 bg-emerald-600 text-white text-center text-xs font-bold rounded-xl shadow-md border border-emerald-500">
                 🎉 Thank you! Your franchise inquiry has been sent successfully. Our team will contact you soon.
             </div>
         </div>
     </section>
 
-    <!-- FOOTER: OUR PROMISE & CLOSING -->
-    <footer class="bg-[#0A2240] text-center py-10 px-4 border-t border-gray-800">
+    <!-- FOOTER -->
+    <footer class="bg-[#0A2240] text-center py-8 px-4 border-t border-gray-800">
         <div class="max-w-md mx-auto flex flex-col items-center">
-            <h3 class="text-white font-bold text-sm tracking-wider">BUILDUP FRANCHISE</h3>
-            <p class="text-[11px] text-gray-400 mt-1">Hotline: 0966-770-6000</p>
+            <h3 class="text-white font-bold text-xs tracking-wider">BUILDUP FRANCHISE</h3>
+            <p class="text-[10px] text-gray-400 mt-1">Hotline: 0966-770-6000</p>
             
-            <div class="mt-4 border-t border-blue-900/50 pt-4 w-full text-left px-4">
-                <p class="text-[11px] font-bold text-blue-300 uppercase tracking-widest text-center mb-2">Our Promise</p>
+            <div class="mt-3.5 border-t border-blue-900/50 pt-3.5 w-full text-left px-4">
+                <p class="text-[10px] font-bold text-blue-300 uppercase tracking-widest text-center mb-1">Our Promise</p>
                 <p class="text-[10px] text-gray-400 text-center leading-relaxed max-w-xs mx-auto">
                     No Hidden Fees • Honest Pricing • Premium Product Quality • Reliable Supply Chain • Lifetime Support • Long-Term Partnership
                 </p>
             </div>
 
-            <p class="text-[10px] text-gray-500 mt-8">
+            <p class="text-[9px] text-gray-500 mt-6">
                 &copy; 2026 BUILDUP FRANCHISE Inc. All Rights Reserved.
             </p>
         </div>
@@ -263,25 +318,38 @@
 
     <!-- Tab Switch Logic & Formspree AJAX Logic -->
     <script>
-        // Package Switching Toggle Logic
         function switchPackage(pkg) {
             const card150 = document.getElementById('package150');
+            const card200 = document.getElementById('package200');
             const card250 = document.getElementById('package250');
+            
             const btn150 = document.getElementById('btn150');
+            const btn200 = document.getElementById('btn200');
             const btn250 = document.getElementById('btn250');
+
+            const launchText = document.getElementById('dynamicLaunchText');
+
+            // Reset classes
+            btn150.className = "flex-1 text-center py-2 rounded-lg transition duration-200 text-gray-600 hover:text-gray-900";
+            btn200.className = "flex-1 text-center py-2 rounded-lg transition duration-200 text-gray-600 hover:text-gray-900";
+            btn250.className = "flex-1 text-center py-2 rounded-lg transition duration-200 text-gray-600 hover:text-gray-900";
+            
+            card150.classList.add('hidden');
+            card200.classList.add('hidden');
+            card250.classList.add('hidden');
 
             if (pkg === 'pkg150') {
                 card150.classList.remove('hidden');
-                card250.classList.add('hidden');
-                
-                btn150.className = "flex-1 text-center py-2.5 text-xs font-bold rounded-lg transition duration-200 bg-blue-600 text-white shadow-sm";
-                btn250.className = "flex-1 text-center py-2.5 text-xs font-bold rounded-lg transition duration-200 text-gray-600 hover:text-gray-900";
-            } else {
-                card150.classList.add('hidden');
+                btn150.className = "flex-1 text-center py-2 rounded-lg transition duration-200 bg-blue-600 text-white shadow-sm";
+                launchText.innerHTML = "To build local trust from day one, BUILDUP officially sponsors <span class='text-emerald-400 font-bold'>3 Free Boxes of Premium Churros Powder (Worth ₱78,000+ Retail Value)</span> for your Grand Opening. This allows you to serve up to 2,025 pieces of free churros to your neighborhood, launching a powerful community sharing event together!";
+            } else if (pkg === 'pkg200') {
+                card200.classList.remove('hidden');
+                btn200.className = "flex-1 text-center py-2 rounded-lg transition duration-200 bg-purple-600 text-white shadow-sm";
+                launchText.innerHTML = "To build local trust from day one, BUILDUP officially sponsors <span class='text-emerald-400 font-bold'>5 Free Boxes of Premium Churros Powder (Worth ₱130,000+ Retail Value)</span> for your Grand Opening. This allows you to serve up to 3,375 pieces of free churros to your neighborhood, launching a powerful community sharing event together!";
+            } else if (pkg === 'pkg250') {
                 card250.classList.remove('hidden');
-                
-                btn150.className = "flex-1 text-center py-2.5 text-xs font-bold rounded-lg transition duration-200 text-gray-600 hover:text-gray-900";
-                btn250.className = "flex-1 text-center py-2.5 text-xs font-bold rounded-lg transition duration-200 bg-indigo-600 text-white shadow-sm";
+                btn250.className = "flex-1 text-center py-2 rounded-lg transition duration-200 bg-indigo-600 text-white shadow-sm";
+                launchText.innerHTML = "To build local trust from day one, BUILDUP officially sponsors <span class='text-emerald-400 font-bold'>7 Free Boxes of Premium Churros Powder (Worth ₱180,000+ Retail Value)</span> for your Grand Opening. This allows you to serve up to 4,725 pieces of free churros to your neighborhood, launching a powerful community sharing event together!";
             }
         }
 
